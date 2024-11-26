@@ -10,6 +10,7 @@ const app = express()
 app.use(cors({
     origin :['https://rcart.onrender.com','https://rcart-1.onrender.com'],
     methods:["GET","POST","PUT","DELETE","OPTIONS"],
+    Headers:['Content-Type', 'Authorization'],
     credentials : true
 }))
 app.use(express.json())
