@@ -8,7 +8,10 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
+    origin : [
+        'http://localhost:3000',
+        'https://sparksage.onrender.com'],
+    methods:["GET","POST","PUT","DELETE"],
     credentials : true
 }))
 app.use(express.json())
