@@ -1,4 +1,4 @@
-const backendDomin = "http://localhost:8080"
+const backendDomin = "https://rcart.onrender.com"
 
 const SummaryApi = {
     signUP : {
