@@ -8,7 +8,7 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin :'https://rcart.onrender.com',
+    origin :['https://rcart.onrender.com','https://rcart-1.onrender.com']
     methods:["GET","POST","PUT","DELETE"],
     credentials : true
 }))
