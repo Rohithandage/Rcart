@@ -9,7 +9,7 @@ const router = require('./routes')
 const app = express()
 app.use(cors({
     origin :['https://rcart.onrender.com','https://rcart-1.onrender.com'],
-    methods:["GET","POST","PUT","DELETE"],
+    methods:["GET","POST","PUT","DELETE","OPTIONS"],
     credentials : true
 }))
 app.use(express.json())
